@@ -18,7 +18,7 @@ stream-kafka() {
 
 # Starts the risingwave cluster
 start-cluster() {
-	docker-compose -f docker/docker-compose.yml up -d
+	docker compose -f docker/docker-compose.yml up -d
 }
 
 # Stops the risingwave cluster
@@ -28,7 +28,7 @@ stop-cluster() {
 
 # Cleans the risingwave cluster
 clean-cluster() {
-	docker-compose -f docker/docker-compose.yml down -v
+	docker compose -f docker/docker-compose.yml down -v
 }
 
 # Starts the clickhouse client.
